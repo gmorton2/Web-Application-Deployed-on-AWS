@@ -8,7 +8,7 @@ const server = http.createServer((req, res) => {
 	//set header content type
 	res.setHeader('Content-Type', 'text/html');
 	//send an html file
-	fs.readFile('./UI/index.html', (err, DataCue) => {
+	fs.readFile('./UI/index.html', (err, data) => {
 	if (err) {
 		console.log(err);
 		res.end();
