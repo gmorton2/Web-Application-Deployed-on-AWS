@@ -23,6 +23,6 @@ const server = http.createServer((req, res) => {
 });
 
 const port = process.env.port || 3000
-app.listen(port, () => {
-	console.log("YO");
+server.listen(port, () => {
+	console.log("Listening for requests");
 });
