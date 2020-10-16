@@ -1,9 +1,9 @@
-const express = require('express');
-const app = express();
+//const express = require('express');
+//const app = express();
 const fd = require('fs');
+const http = require('http');
 
-app.get('/', (req, res) => {
-	//res.send("Welcome");
+
 	//set header content type
 	res.setHeader('Content-Type', 'text/html');
 	//send an html file
@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 			res.end();
 		}
 		else {
-			res.write(data);
+			//res.write(data);
 			res.end();
         }
     })
