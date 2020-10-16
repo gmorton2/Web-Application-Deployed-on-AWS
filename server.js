@@ -24,6 +24,6 @@ const server = http.createServer((req, res) => {
 });
 
 const port = process.env.port || 3000
-server.listen(port, 'localhost', () => {
+server.listen(port, () => {
 	console.log("Listening for requests");
 });
