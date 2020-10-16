@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Forecast</title>
+</head>
+<body>
+
+
+    <form action="" id='store'>
+        <input type="text" id='month-value' placeholder="Month">
+        <input type="text" id='store-value' placeholder="Store Name">
+        <input type="text" id='department-value' placeholder="Department Name">
+    </form>
+
+    <button class='button'>Get Sales Forecast</button>
+
+
+    <script>
+    const months = [null, 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+    document.querySelector('.button').addEventListener('click', () => {
+    const monthSelected = document.querySelector('#month-value').value;
+    const month = months.indexOf(monthSelected);
+    const department = document.querySelector('#department-value').value;
+    const store = document.querySelector('#store-value').value
+
+    console.log(`Fetching forecast for ${department} at ${store} in ${month}...`)
+
+});
+    </script>
+</body>
+</html>
